@@ -21,4 +21,4 @@ async def read_index() -> str:
 
 @app.get("/hello_world")
 async def read_root() -> dict[str, str]:
-    return {"message": "hello world"}
+    return {"message": "hello world!"}
