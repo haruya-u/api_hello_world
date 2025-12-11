@@ -38,18 +38,5 @@ async def greet_user(name: str) -> dict[str, str]:
     @app.get("/double/{number}")
 
 
-    
-async def double_number(number: int) -> dict[str, int]:
-    return {"input": number,"result": number * 2
-           }
-
-import random
-@app.get("/random_quote")
-async def get_random_quote() -> dict[str, str]:
-    quotes = ["失敗は成功のもと "," 継続は力なり"," 千里の道も一歩から"," 七転び八起き"
-             ]
-    return {"quote": random.choice(quotes)}
-
-
 
 
